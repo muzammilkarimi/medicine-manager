@@ -1,0 +1,338 @@
+:root{
+    --blue: rgb(17, 84, 146);
+}
+body{
+    padding: 10px;
+    align-items: center;
+    
+}
+#preloader{
+    position: fixed;
+    width: 97.4vw;
+    height: 94.8vh;
+    background: #fafcf9 url(img/loading.gif) no-repeat center;
+    background-size: contain;
+    z-index: 999999;
+    
+
+}
+.main{
+    background-image: linear-gradient(rgb(25, 98, 141),rgba(225, 243, 248, 0.842)),url(img/background3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 97.4vw;
+    height: 94.8vh;
+    align-items: center;
+}
+
+.welcome{
+    padding-top: 45px;
+    width:100%;
+    height: 325px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4.5rem;
+    margin: 0;
+    letter-spacing: 15px;
+    color: rgb(248, 248, 248);
+}
+.welcome p{
+    
+    color: white;
+    font-size: 1.7rem;
+    margin: 0;
+    font-family: monospace;
+}
+#time{
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    margin: 2px;
+}
+#date{
+    color: #fff;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin: 3px;
+}
+/*================ this is button section=============== */
+.btns-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 210px;
+
+}
+.up-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.down-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn{
+    background-color: rgb(248, 248, 248);
+    width: 190px;
+    height: 50px;
+    display: flex;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    border-radius: 50px;
+    align-items: center;
+    font-weight: 2px;
+    padding-top: 0;
+    border: 2px var(--blue) solid;
+    transition: all .2s;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rbga(0,0,0,.2);
+}
+.btn img{
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+}
+.text{
+    text-align: start;
+}
+ a{
+    text-decoration: none;
+}
+.text h2{
+    margin: 0px;
+    letter-spacing: 1px;
+    font-family: monospace;
+    color: var(--blue);
+}
+.text p{
+    margin: 0px;
+    letter-spacing: .8px;
+    font-size: .5rem;
+    color: var(--blue);
+    font-family: 'DotGothic16', sans-serif;
+}
+.image{
+    background-color: var(--blue);
+    width: 40px ;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+/* ==============bottom section===== */
+.bottom{
+    color: var(--blue);
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    
+}
+/* ====================add medicine page=========== */
+.box{
+    width: 450px;
+    height: 600px;
+    box-sizing: border-box;
+    align-items: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.431);
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+    margin-top: 30px;
+}
+.form{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.details_two{
+    padding-bottom: 10px;
+}
+.heading h2{
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    font-family: 'DotGothic16', sans-serif;
+}
+.details input{
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    color: black;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--blue);
+    background: transparent;
+}
+.details input::placeholder{
+    color: rgba(17, 84, 146, 0.226);
+}
+.details p{
+    color: var(--blue);
+    margin: 0;
+    font-size: 18px;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+
+
+/* ========show all medicine page============= */
+
+.search img{
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+}
+.search{
+    background-color: white;
+    border: 2px var(--blue) solid;
+    border-radius: 25px;
+    width: 500px;
+    height: 47px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1px 6px;
+}
+.search input{
+    height: 35px;
+    border: none;
+    width: 400px;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--blue);
+
+}
+.search input::placeholder{
+    font-size: 1rem;
+    color: var(--blue);
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 1px;
+}
+.container{  
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.table-box{
+    background-color: rgba(255, 255, 255, 0.692);
+    text-align: center;
+    overflow-y: scroll;
+    height: 525px;
+    width: 1300px;
+    /* border-top-left-radius: 10px; */
+    border: 2px var(--blue) solid;
+    border-radius: 10px;
+}
+
+table{
+    width: 100%;
+    border-radius: 10px;
+}
+/* ===========this is for scroll bar===========  */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+th{
+    color: white;
+    background-color: var(--blue);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'DotGothic16', sans-serif;
+}
+table, th, td{
+    border: 1px var(--blue) solid;
+    border-collapse: collapse;
+    text-align: left;
+}
+td{
+    color: var(--blue);
+    font-size: 1.09rem;
+    letter-spacing: .8px;
+}
+td img{
+    height: 28px;
+    width: 28px;
+    filter: hue-rotate(45deg);
+}
+.change{
+    background-color: var(--blue);
+    color: #fff;
+}
+.change-img{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ==================history selection============= */
+.selection_box_main{
+    width: 97vw;
+    height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.selection_box{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.431);
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+}
+.selection_box h1{
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.selection_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+
+}

@@ -1,0 +1,72 @@
+
+:root{
+    --blue: rgb(17, 84, 146);
+}.back_btn{
+    background-color: rgb(248, 248, 248);
+    width: 190px;
+    height: 50px;
+    display: flex;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    border-radius: 50px;
+    align-items: center;
+    font-weight: 2px;
+    padding-top: 0;
+    border: 2px var(--blue) solid;
+    transition: all .2s;
+    cursor: pointer;
+}
+.back_btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.back_btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rbga(0,0,0,.2);
+}
+.back_btn img{
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+}
+.text{
+    text-align: start;
+}
+ a{
+    text-decoration: none;
+}
+.text h2{
+    margin: 0px;
+    letter-spacing: 1px;
+    font-family: monospace;
+    color: var(--blue);
+}
+.text p{
+    margin: 0px;
+    letter-spacing: .8px;
+    font-size: .5rem;
+    color: var(--blue);
+    font-family: 'DotGothic16', sans-serif;
+}
+.image{
+    background-color: var(--blue);
+    width: 40px ;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+#time{
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    margin: 2px;
+}
+#date{
+    color: #fff;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin: 3px;
+}

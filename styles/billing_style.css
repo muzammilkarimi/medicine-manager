@@ -1,0 +1,44 @@
+:root {
+  --blue: rgb(17, 84, 146);
+}
+body {
+  padding: 10px;
+  align-items: center;
+}
+.main{
+    background-image: linear-gradient(rgb(25, 98, 141),rgba(225, 243, 248, 0.842)),url(img/background3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 97.4vw;
+    height: 94.8vh;
+    align-items: center;
+
+}
+.form{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bill_box {
+  width: 1300px;
+  height: 600px;
+  background-color: white;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  /*display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+  background-color: rgba(255, 255, 255, 0.431);
+  border: 2px solid var(--blue);
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.heading h2 {
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 20px;
+  font-family: "DotGothic16", sans-serif;
+}
