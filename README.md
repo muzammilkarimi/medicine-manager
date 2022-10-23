@@ -5,6 +5,7 @@
 # Features----
 <img align="left" alt="madman logo" width="26px" src="https://github.com/muzammilkarimi/medicine-manager/blob/master/img/med_man2.png?raw=true" style="padding-right:10px;" /> 
 <br/>
+
 - Billing 
 - Add medicine
 - Search Medicine
