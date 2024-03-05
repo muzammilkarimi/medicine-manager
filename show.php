@@ -100,7 +100,7 @@
 
 include 'connection.php';
 
-$sql ="select * from add_med";
+$sql ="select * from add_med order by `s.no` desc";
 
 $query =mysqli_query($con, $sql);
 

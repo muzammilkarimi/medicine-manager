@@ -47,7 +47,7 @@
 
 include 'connection.php';
 
-$sql ="select * from add_history";
+$sql ="select * from add_history order by `s.no` desc";
 
 $query =mysqli_query($con, $sql);
 
