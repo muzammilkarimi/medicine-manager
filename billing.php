@@ -24,8 +24,38 @@
         <section class="form">
         <div class="bill_box">
              <div class="heading">
-                <h2>Invoice</h2>
+                <h2>Khalique Medical Hall, Aurai</h2>
             </div>
+        </div>
+        </section>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- <form class="details" action="" method="POST">
                 <div class="details_two">
                <div class="rmsearch">

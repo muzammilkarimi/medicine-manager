@@ -1,5 +1,6 @@
 :root {
   --blue: rgb(17, 84, 146);
+  --white: #fff;
 }
 body {
   padding: 10px;

@@ -36,17 +36,14 @@
                <p> Quantity:</p> <input type="int" name="quan" placeholder="Enter Quantity" required><br>
                <p> Total Quantity:</p> <input type="int" name="tquan" placeholder="Enter Total Quantity" required>
                </div>
-            <div class="add-button" style="display: flex;
-    justify-content: center;">
+            <div class="add-button" style="display: flex; justify-content: center;">
                     <button class="btn" name="submit">
                         <div class="image">
                             <img src="img/add.svg" alt="">
                         </div>
                         <div class="text">
                             <h2 style="" >add</h2>
-                            <p style="margin: 0px;
-    letter-spacing: .8px;
-    font-size: .5rem;">Medicine</p>
+                            <p style="margin: 0px; letter-spacing: .8px; font-size: .5rem;">Medicine</p>
                         </div>
                     </button>
             </div>

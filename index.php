@@ -123,7 +123,7 @@
             </div>
         </div>
         <div class="bottom">
-            <p>Develop By <strong> MUZAMMIL AHMAD KARIMI </strong>From <strong> MAKTECH</strong></p>
+            <p>Made with ❤️ by <strong>MAK</strong></p>
         </div>
     </section>
     <script>
