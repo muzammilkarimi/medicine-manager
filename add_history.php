@@ -17,6 +17,7 @@
 <?php
   include 'navbar.php';
 ?>
+    <h1 class="page-title">Addition History</h1>
 	<div class="container">
     <div class="search">
                 <div class="image">

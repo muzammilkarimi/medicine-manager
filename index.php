@@ -81,6 +81,7 @@
             </div>
             <!-- empty soon switch -->
             <div class="down-btn">
+                <a href="empty_soon.php">
                 <button class="btn">
                     <div class="image">
                         <img src="img/empty.svg" alt="">
@@ -90,7 +91,9 @@
                         <p>Soon Medicine</p>
                     </div>
                 </button>
+                </a>
                 <!-- see expire medicine btn -->
+                <a href="expire_soon.php">
                 <button class="btn">
                     <div class="image">
                         <img src="img/expire.svg" alt="">
@@ -100,7 +103,9 @@
                         <p>Soon Medicine</p>
                     </div>
                 </button>
+                </a>
                 <!-- backup data button -->
+                <a href="backup.php">
                 <button class="btn">
                     <div class="image">
                         <img src="img/update.svg" alt="">
@@ -110,6 +115,7 @@
                         <p>of All data</p>
                     </div>
                 </button>
+                </a>
                 <!-- more options button -->
                 <button class="btn">
                     <div class="image">

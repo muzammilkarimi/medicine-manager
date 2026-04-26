@@ -1,13 +1,19 @@
 <style>
-    li:hover{
-        background-color:red;
+    .suggestion-item {
+        list-style: none;
+        cursor: pointer;
+        background-color: white;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #eee;
+        color: #333;
+        transition: background-color 0.2s;
     }
-    a{
-        text-decoration:none;
-        color:black;
-    }
-    a:hover{
-        color:red;
+    .suggestion-item:hover, .suggestion-active {
+        background-color: #e6f2ff !important;
+        color: rgb(17, 84, 146) !important;
+        font-weight: bold;
     }
 </style>
 <?php
@@ -17,18 +23,14 @@ $query ="SELECT * FROM add_med WHERE name like '" . $_POST["keyword"] . "%' ORDE
 $result = mysqli_query($con, $query);
 if(!empty($result)) {
 ?>
-<ul style="margin:10px; padding:0;">
+<ul style="margin:0; padding:0; list-style:none;">
 <?php
 foreach($result as $add_med) {
 ?>
-<a href="#"><li style="list-style:none; cursor:pointer; background-color:white; padding-bottom: 2px;
-    letter-spacing: 1px; font-size: 1.1rem; " onClick="selectmedicine('<?php echo $add_med["name"]; ?>',
-    '<?php echo $add_med["exp"]; ?>',
-    '<?php echo $add_med["selling_price"]; ?>',
-    '<?php echo $add_med["quantity"]; ?>');"><?php echo $add_med["name"]; ?></li></a>
+<li class="suggestion-item" onClick="selectmedicine('<?php echo $add_med['s.no']; ?>',
+    '<?php echo addslashes($add_med['name']); ?>',
+    '<?php echo $add_med['selling_price']; ?>',
+    '<?php echo $add_med['total_quantity']; ?>');"><?php echo $add_med["name"]; ?> (Stock: <?php echo $add_med['total_quantity']; ?>)</li>
 <?php } ?>
-<script>
-    
-</script>
 </ul>
 <?php } } ?>

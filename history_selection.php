@@ -13,6 +13,7 @@
     </style>
     <section class="main">
         <?php include 'navbar.php'; ?>
+        <h1 class="page-title">History Portal</h1>
         <div class="selection_box_main">
             <div class="selection_box">
                 <h1>select history</h1>

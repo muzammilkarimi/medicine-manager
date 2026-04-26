@@ -18,7 +18,7 @@
             <td class="py-2"><?php echo $rows['exp']; ?> </td>
             <td class="py-2">Rs. <?php echo $rows['selling_price']; ?> </td>
             <td class="py-2"><?php echo $rows['total_quantity']; ?> </td>
-            <td class="change-img"><a href=""><img src="img/edit.svg" alt=""></a> <a href=""><img src="img/delete.svg" alt=""></a> </td>
+            <td class="change-img"><a href="edit_medicine.php?id=<?php echo $rows['s.no']; ?>"><img src="img/edit.svg" alt=""></a> <a href="delete_medicine.php?id=<?php echo $rows['s.no']; ?>" onclick="return confirm('Are you sure you want to delete this medicine?');"><img src="img/delete.svg" alt=""></a> </td>
             </tr>
                 
         <?php

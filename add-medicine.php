@@ -16,41 +16,61 @@
 
 <body>
 
-    <section class="main">
-        <?php
-         include 'navbar.php'
-        ?>
-        <section class="form">
-        <div class="box">
-            <div class="heading">
-                <h2>add medicine</h2>
-            </div>
-            <form class="details" action="" method="POST">
-                <div class="details_two">
-               <p> Name:</p> <input type="text" name="medname" placeholder="Enter Medicine Name" required><br>
-               <p> Company Name:</p> <input type="text" name="comname" placeholder="Enter Company Name" required><br>
-               <p> Rack No:</p> <input type="text" name="rackno" placeholder="Enter Rack Number" required><br>
-               <p> Exp. Date:</p> <input type="date" name="exp" placeholder="Enter Expiry Date" required><br>
-               <p> Selling Price:</p> <input type="int" name="sprice" placeholder="Enter Selling Price" required><br>
-               <p> Buying Price:</p> <input type="int" name="bprice" placeholder="Enter Buying Price" required><br>
-               <p> Quantity:</p> <input type="int" name="quan" placeholder="Enter Quantity" required><br>
-               <p> Total Quantity:</p> <input type="int" name="tquan" placeholder="Enter Total Quantity" required>
-               </div>
-            <div class="add-button" style="display: flex; justify-content: center;">
-                    <button class="btn" name="submit">
-                        <div class="image">
-                            <img src="img/add.svg" alt="">
-                        </div>
-                        <div class="text">
-                            <h2 style="" >add</h2>
-                            <p style="margin: 0px; letter-spacing: .8px; font-size: .5rem;">Medicine</p>
-                        </div>
-                    </button>
-            </div>
-            </form>
-        </div>
-    </section>
 
+    <section class="main">
+        <?php include 'navbar.php' ?>
+        <h1 class="page-title">Add Medicine</h1>
+        
+        <div class="premium-container">
+            <div class="premium-box">
+                <form action="" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="medname" placeholder="Enter Medicine Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" name="comname" placeholder="Enter Company Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Selling Price (Rs)</label>
+                            <input type="number" step="any" name="sprice" placeholder="Enter Selling Price" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Buying Price (Rs)</label>
+                            <input type="number" step="any" name="bprice" placeholder="Enter Buying Price" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="number" name="quan" placeholder="Enter Quantity" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Total Quantity</label>
+                            <input type="number" name="tquan" placeholder="Enter Total Quantity" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Rack No</label>
+                            <input type="text" name="rackno" placeholder="Enter Rack Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="date" name="exp" required>
+                        </div>
+
+                        <div class="submit-container">
+                            <button type="submit" class="premium-btn" name="submit">
+                                <img src="img/add.svg" alt="">
+                                <span>Add Medicine</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 

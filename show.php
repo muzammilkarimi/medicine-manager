@@ -71,6 +71,7 @@
 <?php
   include 'navbar.php';
 ?>
+    <h1 class="page-title">All Medicines</h1>
 	<div class="container">
     <div class="search">
                 <div class="image">
@@ -116,8 +117,10 @@ while($rows = mysqli_fetch_assoc($query))
 <td class="py-2"><?php echo $rows['exp']; ?> </td>
 <td class="py-2">Rs. <?php echo $rows['selling_price']; ?> </td>
 <td class="py-2"><?php echo $rows['total_quantity']; ?> </td>
-<td class="change-img"><div class="tooltip"><a href="#" ><img src="img/edit.svg" alt=""></a> <span class="tooltiptext">Update Medicine</span> </div>
-<div class="tooltip"><a href="#"><img src="img/delete.svg" alt=""></a><span class="tooltiptext2">Delete Medicine</span></div> </td>
+<td class="change-img">
+    <div class="tooltip"><a href="edit_medicine.php?id=<?php echo $rows['s.no']; ?>" ><img src="img/edit.svg" alt=""></a> <span class="tooltiptext">Update Medicine</span> </div>
+    <div class="tooltip"><a href="delete_medicine.php?id=<?php echo $rows['s.no']; ?>" onclick="return confirm('Are you sure you want to delete this medicine?');"><img src="img/delete.svg" alt=""></a><span class="tooltiptext2">Delete Medicine</span></div> 
+</td>
     
 <?php
 }

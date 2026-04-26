@@ -2,9 +2,11 @@
     --blue: rgb(17, 84, 146);
 }
 body{
-    padding: 10px;
-    align-items: center;
-    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
 }
 #preloader{
     position: fixed;
@@ -20,9 +22,22 @@ body{
     background-image: linear-gradient(rgb(25, 98, 141),rgba(225, 243, 248, 0.842)),url(img/background3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 97.4vw;
-    height: 94.8vh;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
     align-items: center;
+    overflow-y: auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'DotGothic16', sans-serif, monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .welcome{
@@ -243,12 +258,15 @@ body{
 .table-box{
     background-color: rgba(255, 255, 255, 0.692);
     text-align: center;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
     height: 525px;
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
     /* border-top-left-radius: 10px; */
     border: 2px var(--blue) solid;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 table{
@@ -334,5 +352,103 @@ td img{
     align-items: center;
     justify-content: space-around;
     width: 600px;
+}
 
+/* ==================Premium Form UI============= */
+.premium-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.premium-box {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    box-sizing: border-box;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form-group label {
+    color: var(--blue);
+    font-family: 'DotGothic16', sans-serif, monospace;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.form-group input {
+    background: #e8ecf1;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #222;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.08);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.form-group input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(17, 84, 146, 0.2);
+    background: #fff;
+    transform: translateY(-2px);
+}
+.form-group input::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+.submit-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.premium-btn {
+    background: linear-gradient(135deg, var(--blue), #2b88d8);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 40px;
+    font-size: 1.2rem;
+    font-family: 'DotGothic16', sans-serif, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(17, 84, 146, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.premium-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(17, 84, 146, 0.5);
+}
+.premium-btn:active {
+    transform: translateY(1px);
+}
+.premium-btn img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
 }
